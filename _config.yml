@@ -49,6 +49,8 @@ discus_identifier: mr-brown # Add your discus identifier
 paginate: 6
 paginate_path: ./page:num/
 
+remote_theme: artemsheludko/adam-blog
+
 # Build settings
 markdown: kramdown
 # theme: minima
