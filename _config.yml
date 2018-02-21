@@ -25,8 +25,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
 author: Jonas Harsch # add your name
-author-pic: adam-face.jpg
-about-author: My name is Jonas Harsch. I’m a simulation technology student of university stuttgart.
+author-pic: author_cropped.jpg
+about-author: My name is Jonas Harsch. I’m a simulation technology student of university stuttgart. In my blog I cover topics I'm intrested in. All about coding, math, simulation, programming languages, continuum mechanics and much more.
 
 # Contact links
 email: # Add your Email address
