@@ -37,7 +37,7 @@ analytics: # Google Analytics
 paginate: 6
 paginate_path: /page:num/
 
-remote_theme: owner/name
+remote_theme: artemsheludko/adam-blog
 
 # Build settings
 markdown: kramdown
