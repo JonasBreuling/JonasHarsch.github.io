@@ -37,6 +37,8 @@ analytics: # Google Analytics
 paginate: 6
 paginate_path: /page:num/
 
+remote_theme: owner/name
+
 # Build settings
 markdown: kramdown
 gems:
