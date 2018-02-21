@@ -29,15 +29,15 @@ author-pic: author_cropped.jpg
 about-author: My name is Jonas Harsch. I’m a simulation technology student of university stuttgart. In my blog I cover topics I'm intrested in. All about coding, math, simulation, programming languages, continuum mechanics and much more.
 
 # Contact links
-email: # Add your Email address
+email: 'jonas_harsch@web.de' # Add your Email address
 phone: # Add your Phone number
-website: # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
-github: artemsheludko # Add your Github handle
-twitter: '@artemsheludko_' # Add your Twitter handle
-facebook: # Add your Facebook handle
-instagram: # Add your Instagram handle
-pinterest: # Add your Pinterest handle
+website: 'jonasharsch.github.io/' # Add your website, do not add http://
+linkedin: 'jonas-harsch-2002a9153' # Add your Linkedin handle
+github: 'JonasHarsch' # Add your Github handle
+# twitter: # Add your Twitter handle
+# facebook: # Add your Facebook handle
+# instagram: # Add your Instagram handle
+# pinterest: # Add your Pinterest handle
 
 # Newsletter
 # mailchimp: # Add your MailChimp form identifier.
