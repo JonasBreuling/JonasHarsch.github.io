@@ -9,11 +9,11 @@ author: Jonas Harsch # Add name author (optional)
 ---
 
 Hey together,
-topic of this post is *fortran* and how we can compile code in different ways. 
+topic of this post is **fortran** and how we can compile code in different ways.
 
-1. First I will discuss how *fortran* code can be compiled using the *command line*
-2. In the second part I will present you how this can be done using a hand crafted *Makefile*
-3. In the end and this will be the main part of this post I will show you how *CMake* can be used to have a comfortable and state of the art build system which generates us a *Makefile*
+1. First I will discuss how **fortran** code can be compiled using the *command line*
+2. In the second part I will present you how this can be done using a hand crafted `Makefile`
+3. In the end and this will be the main part of this post I will show you how *CMake* can be used to have a comfortable and state of the art build system which generates us a `Makefile`
 
 In the following we use a really simple fortran code as example. The structure of the code and the files looks like this
 
@@ -36,9 +36,7 @@ program main
     call write_text(text)
 
 end program main
-```
 
-```fortran
 ! do_something.f90
 module do_something
     implicit none
@@ -59,13 +57,13 @@ end module do_something
 
 ## Compile a simple fortran code I (command line)
 
-This example code can be compiled via command line using a fortran compiler (e.g. [gfortran](https://gcc.gnu.org/wiki/GFortran), or [ifort](https://software.intel.com/en-us/fortran-compilers)) by typing 
+This example code can be compiled via command line using a fortran compiler (e.g. [gfortran](https://gcc.gnu.org/wiki/GFortran), or [ifort](https://software.intel.com/en-us/fortran-compilers)) by typing
 
 ```bash
 gfortran -O3 -Wall do_something.f90 main.f90 -o main
 ```
 
-where we have used some compiler flags (defining the behaviour of the compiler, see [here](https://gcc.gnu.org/onlinedocs/gfortran/Option-Summary.html)). After the compilation is finished we can run the file using 
+where we have used some compiler flags (defining the behaviour of the compiler, see [here](https://gcc.gnu.org/onlinedocs/gfortran/Option-Summary.html)). After the compilation is finished we can run the file using
 
 ```bash
 ./main
@@ -142,7 +140,7 @@ Now you will say **man thats's ugly** and I will agree. So let's see how build s
 
 ## Compile a simple fortran code III (CMake)
 
-Another way to build a ' Makefiles'  is to use a build system. We are using [CMake](https://cmake.org/). 
+Another way to build a ' Makefiles'  is to use a build system. We are using [CMake](https://cmake.org/).
 
 >CMake is an open-source, cross-platform family of tools designed to build, test and package software. CMake is used to control the software compilation process using simple platform and compiler independent configuration files, and generate native makefiles and workspaces that can be used in the compiler environment of your choice. The suite of CMake tools were created by Kitware in response to the need for a powerful, cross-platform build environment for open-source projects such as ITK and VTK.
 

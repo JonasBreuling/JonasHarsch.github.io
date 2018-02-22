@@ -19,7 +19,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 # permalink: ':title/'
-# baseurl: "" # the subpath of your site, e.g. /blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -27,6 +26,16 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 author: Jonas Harsch # add your name
 author-pic: author_cropped.jpg
 about-author: My name is Jonas Harsch. I’m a simulation technology student of university stuttgart. In my blog I cover topics I'm intrested in. All about coding, math, simulation, programming languages, continuum mechanics and much more.
+about-author-long: |
+    My name is Jonas Harsch. I’m a simulation technology student of university stuttgart. In my blog I cover topics I'm intrested in.
+
+    Key interests
+    - Nonlinear continuum mechanis
+    - High performance computing (implementation of parallel numerical solver using *MPI*, *OpenCL* and *CUDA*)
+    - Isogeometric analysis
+    - Programming (C++, Fortran, python, cmake)
+
+    > <center>Für nichts und wiedernichts!</center>
 
 # Contact links
 email: 'jonas_harsch@web.de' # Add your Email address
@@ -50,6 +59,8 @@ paginate: 6
 paginate_path: ./page:num/
 
 remote_theme: artemsheludko/adam-blog
+
+highlighter: rouge
 
 # Build settings
 markdown: kramdown
