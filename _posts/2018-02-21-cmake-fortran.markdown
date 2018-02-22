@@ -2,7 +2,7 @@
 layout: post
 title:  Using CMake for fortran
 date:   2018-02-21 22:13:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Topic of this post is fortran and how we can compile code in different ways. In the end I will present a clean and easy CMake file.
 img: cmake-fortran/titlepage.svg # Add image post (optional)
 tags: [cmake, fortran]
 author: Jonas Harsch # Add name author (optional)

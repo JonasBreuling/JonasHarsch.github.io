@@ -1,5 +1,5 @@
 ---
-layout: home-page
+layout: author
 title: About
 permalink: /about/
 ---
@@ -7,9 +7,9 @@ permalink: /about/
   <div class="about-container">
     <section class="about-header">
       <div class="author-image-container">
-        <img src="{{site.baseurl}}/assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="{{site.author}}">
+        <img src="{{site.baseurl}}/assets/images/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="{{site.author}}">
       </div>
-      <p class="subtitle">{{site.about-author-long | markdownify}}</p>
+      <p class="subtitle">{{site.about-author | markdownify}}</p>
     </section>
     <section class="about-body">
       <ul class="contact-list">

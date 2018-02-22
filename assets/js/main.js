@@ -1,22 +1,22 @@
 $(document).ready(function() {
 
-  // Menu Settings
-  $('.menu-icon, .menu-icon-close').click(function(e) {
-    e.preventDefault();
-    $('.flex-container').toggleClass('active');
-  });
+  // Click Top Menu
+$(".toggle_menu").click(function() {
+	if ($(".top_menu").is(":visible")) {
+		$(".top_menu").fadeOut(600);
+	} else {
+		$(".top_menu").fadeIn(600);
+	}
+});
 
-  // Search Settings
-  $('.search-icon').on('click', function(e){
-    e.preventDefault();
-    $('.search-box').toggleClass('search-active');
+$(".top_menu ul a").click(function() {
+	$(".top_menu").fadeOut(600);
+	$(".sandwich").toggleClass("active");
+}).append("<span>");
+// Top Menu End
 
-    if ($('.search-box').hasClass('search-active')) {
-      $('.search-icon-close').on('click', function(e){
-  		e.preventDefault();
-  		$('.search-box').removeClass('search-active');
-  	});
-  }
-  });
+$(".toggle_menu").click(function() {
+  $(".sandwich").toggleClass("active");
+});
 
 });

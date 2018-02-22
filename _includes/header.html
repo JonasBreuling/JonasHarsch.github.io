@@ -1,20 +1,26 @@
-<header class="main-header">
-  <div class="wrapper">
-    <div class="header-flex">
-      <div class="menu-icon-container">
-        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-      </div>
-      <nav class="main-nav">
-        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
-        <ul>
-          <li><a href="{{site.baseurl}}/">Blog</a></li>
-          <li><a href="{{site.baseurl}}/about">About</a></li>
-        </ul>
-      </nav>
-      <p class="logo"><a href="{{site.baseurl}}/">{{ site.author }}</a></p>
-      <div class="search-icon-container">
-        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
-      </div>
+<header class="site-header">
+  <button class="toggle_menu">
+    <span class="sandwich">
+      <span class="sw-topper"></span>
+      <span class="sw-bottom"></span>
+      <span class="sw-footer"></span>
+    </span>
+  </button>
+  <nav class="top_menu">
+    <ul>
+      <li class="main-items"><a href="{{site.baseurl}}/">Home</a></li>
+      <li class="main-items">
+        <a href="{{site.baseurl}}/search/">
+           <img style="vertical-align:middle" src="{{site.baseurl}}/assets/images/search_icon.svg" alt="search_icon">
+        </a>
+      </li>
+      <li class="main-items"><a href="{{site.baseurl}}/about/">About</a></li>
+    </ul>
+  </nav>
+  <div class="header-content">
+    <div class="logo">
+      <a href="{{site.baseurl}}/" class="logo-link">Jonas<svg class="hat" viewBox="0 0 450.79805 441.53398"><img style="vertical-align:middle" src="{{site.baseurl}}/assets/images/{% if site.logo-pic %}{{site.logo-pic}}{% endif %}" alt="logo-pic"></svg>Harsch
+      </a>
     </div>
   </div>
-</header> <!-- End Header -->
+</header>
