@@ -1,26 +1,84 @@
-<header class="site-header">
-  <button class="toggle_menu">
-    <span class="sandwich">
-      <span class="sw-topper"></span>
-      <span class="sw-bottom"></span>
-      <span class="sw-footer"></span>
-    </span>
-  </button>
-  <nav class="top_menu">
-    <ul>
-      <li class="main-items"><a href="{{site.baseurl}}/">Home</a></li>
-      <li class="main-items">
-        <a href="{{site.baseurl}}/search/">
-           <img style="vertical-align:middle" src="{{site.baseurl}}/assets/images/search_icon.svg" alt="search_icon">
-        </a>
-      </li>
-      <li class="main-items"><a href="{{site.baseurl}}/about/">About</a></li>
-    </ul>
-  </nav>
-  <div class="header-content">
-    <div class="logo">
-      <a href="{{site.baseurl}}/" class="logo-link">Sim<svg class="hat" viewBox="0 0 450.79805 441.53398"><img style="vertical-align:middle" src="{{site.baseurl}}/assets/images/{% if site.logo-pic %}{{site.logo-pic}}{% endif %}" alt="logo-pic"></svg>Toys
+<!DOCTYPE html>
+<html>
+  <div class="background_image"></div>
+  <div class="header">
+    <!-- <div class="row"> 
+        <div class="column">
+            <h1>{{site.title}}</h1>
+            <img src="{{site.baseurl}}/assets/images/header.svg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{{site.baseurl}}/assets/images/virtual_work.svg" style="width:100%">
+            <p>{{site.description}}</p>
+          </div> 
+    </div>  -->
+    <!-- <div class="hover01">
+      <figure>
+        <img src="../assets/images/virtual_work.svg">
+      </figure>
+      <figure>
+        <img src="../assets/images/header.svg">
+      </figure>
+    </div>  -->
+
+    <!-- <div class="main_block">
+      <div class="inner_block">
+        <img class="imgA1" src="{{site.baseurl}}/assets/images/header.svg">
+      </div>
+      <div class="inner_block">
+        <img class="imgA1" src="{{site.baseurl}}/assets/images/pde.svg">
+      </div>    
+    </div> -->
+
+    <img class="imgB1" src="{{site.baseurl}}/assets/images/virtual_work.svg">
+    <h1>{{site.title}}</h1>
+    <p>{{site.description}}</p>
+    <img id="beam_id" class="imgB1" src="{{site.baseurl}}/assets/images/beam0.svg">
+
+    <!-- <div class="main_block">
+      <div class="inner_block">
+        <img id="beam_id" class="imgB1" src="{{site.baseurl}}/assets/images/beam0.svg">
+      </div>
+      <div class="inner_block">
+        <img class="imgB1" src="{{site.baseurl}}/assets/images/virtual_work.svg">
+      </div>    
+    </div> -->
+
+    <!-- <div class="hover01 row">
+        <figure><img src="https://nxworld.net/example/css-image-hover-effects/pic01.jpg" /></figure>
+        <figure><img src="https://nxworld.net/example/css-image-hover-effects/pic02.jpg" /></figure>
+        <figure><img src="https://nxworld.net/example/css-image-hover-effects/pic03.jpg" /></figure>
+    </div>   -->
+    <!-- <img class="virtual_work" src="../assets/images/virtual_work.svg" alt="virtual_work.svg">
+    <img class="waves" src="../assets/images/header.svg" alt="header.svg"> -->
+  </div>
+  <!-- <div class="header_iamge"></div> -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <!-- <i class="fa fa-times-circle fa-2x" aria-hidden="true"></i> -->
+      <i class="fa fa-times fa-1x" aria-hidden="true"></i>
+    </a>
+    <div class="overlay-content">
+      <a href="{{site.baseurl}}/index.html">
+        Home
+      </a>
+      <a href="#">
+        Search
+      </a>
+      <a href="#">
+        About
       </a>
     </div>
   </div>
-</header>
+  <div id="navbar">
+    <a href="{{site.baseurl}}/index.html">
+      <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a class="right" style="cursor:pointer" onclick="openNav()">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+    <a class="right" href="{{site.baseurl}}/search.html">
+      <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+    </a>
+  </div>  
+</html>

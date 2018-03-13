@@ -1,46 +1,28 @@
-title: Blog of Jonas Harsch
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# permalink: ':title/'
+title: SimToys
+email: your-email@domain.com
+description: All about nonlinear continuum mechanics, solving of numerical problems, coding and much more.
+permalink: ""
 baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
 author: Jonas Harsch # add your name
-author-pic: author.svg
-logo-pic: logo.svg
-logo-pic: header_new.svg
-logo-pic: header.svg
-# logo-pic: logo.ico
-# author-pic: adam-face.jpg
-# about-author: My name is Jonas Harsch. I’m a simulation technology student of university stuttgart. In my blog I cover topics I'm intrested in. All about coding, math, simulation, programming languages, continuum mechanics and much more.
-about-author: |
-    My name is Jonas Harsch. I’m a simulation technology student of university stuttgart. In my blog I cover topics I'm intrested in.
-    - Nonlinear continuum mechanis
-    - High performance computing (implementation of parallel numerical solver using *MPI*, *OpenCL* and *CUDA*)
-    - Isogeometric analysis
-    - Programming (C++, Fortran, python, cmake)
-    > <center>Für nichts und wiedernichts!</center>
+author-pic: adam-face.jpg
+about-author: My name is Jonas Harsch...
 
 # Contact links
 email: 'jonas_harsch@web.de' # Add your Email address
 phone: # Add your Phone number
-website: 'jonasharsch.github.io/' # Add your website, do not add http://
-linkedin: 'jonas-harsch-2002a9153' # Add your Linkedin handle
-github: 'JonasHarsch' # Add your Github handle
-# twitter: # Add your Twitter handle
-# facebook: # Add your Facebook handle
-# instagram: # Add your Instagram handle
-# pinterest: # Add your Pinterest handle
-
-highlighter: rouge
+website: 'https://jonasharsch.github.io' # Add your website, do not add http://
+linkedin: 'https://www.linkedin.com/in/jonas-harsch-2002a9153/' # Add your Linkedin handle
+github: 'https://github.com/JonasHarsch' # Add your Github handle
 
 # Build settings
 markdown: kramdown
 
-include: [_pages]
+algolia:
+  application_id: 6E6MUTBXCO
+  index_name:     index.html
+  search_only_api_key: 86ad1db9079ecc3013d32a4d2851fb2f
 
-# Build settings
-markdown: kramdown
+include: [_includes, _layouts, _posts]

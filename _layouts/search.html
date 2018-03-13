@@ -1,6 +1,16 @@
----
-layout: base
----
-<div class="search">
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include header_navigation_only.html %}
+  <div class="page-wrap">
+    <main role="main">
+      <div class="content">
 	{{ content }}
-</div>
+      </div>
+    </main>
+  </div>
+{% include footer.html %}
+{% include javascripts.html %}
+</body>
+</html>

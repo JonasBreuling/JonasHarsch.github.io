@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: blog-post
 title:  Using CMake for fortran
 date:   2018-02-21 22:13:00 +0300
 description: Topic of this post is fortran and how we can compile code in different ways. In the end I will present a clean and easy CMake file.
 img: cmake-fortran/titlepage.svg # Add image post (optional)
 tags: [cmake, fortran]
-author: Jonas Harsch # Add name author (optional)
+author: Jonas Harsch # Add name author (optional)#
+permalink: posts
 ---
 
 Hey together,
