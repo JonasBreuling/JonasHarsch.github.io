@@ -1,35 +1,32 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {
+  // moveTitle();
+  stickyHeader();
+};
 
-var navbar = document.getElementById("navbar");
+var pageHeight = screen.height / 1.3;
+var content =  document.getElementsByClassName("header-content")[0];
+// var content = document.getElementById("header-content");
+
+// var navbar = document.getElementById("navbar");
+var navbar =  document.getElementsByClassName("navbar")[0];
 var sticky = navbar.offsetTop;
 
-// Array of images to swap between
-var images = [];
+function moveTitle() {
 
-// Add 5 items to array
-for (i = 0; i < 6; i++) {
-  images.push('assets/images/beam' + i + '.svg');
+  i = parseInt( 10 + ($(this).scrollTop() / pageHeight) * 120);
+  if (i < 50) {
+    content.style["top"] = "" + i + "%";
+  }
+
 }
 
-var totalImages = images.length;
-var pageHeight = screen.height / 1.3;
+function stickyHeader() {
+  // document.write("124");
 
-// Work out how often we should change image (i.e. how far we scroll between changes)
-var scrollInterval = Math.floor(pageHeight / totalImages);
-
-function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }
 
-  // Which one should we show at this scroll point?
-  i = Math.floor($(this).scrollTop() / scrollInterval);
-  if (i >= totalImages) {
-    i = totalImages - 1;
-  }
-  // Show the corresponding image from the array
-  // $('img').attr('src', images[i]);
-  document.getElementById("beam_id").src=images[i];
 }
