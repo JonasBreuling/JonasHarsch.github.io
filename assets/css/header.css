@@ -1,5 +1,6 @@
 .background-image {
-    background-image: url("../../assets/images/bg_new.svg");
+    /* background-image: url("../../assets/images/bg_new.svg"); */
+    background-image: url("../../assets/images/bg_new.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +13,9 @@
 
 .header-title-wrapper {
     position: absolute;
-    left: 50%;
+    /* left: 25%; */
+    margin-left: 10%;
+    margin-right: 10%;
     top: 25%;
 }
 
@@ -20,7 +23,7 @@
 
     color: white;
     position: relative; 
-    left: -50%;  
+    /* left: -50%;   */
 
     background: rgba(51, 51, 51, 0.9);
     border-radius: 20px;
@@ -29,7 +32,7 @@
     padding: 0px 10px;
     padding-bottom: 10px;
 
-    min-width: 300px;
+    /* min-width: 300px; */
 
     text-align: center;
 
