@@ -137,7 +137,7 @@ a:focus {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
     color: #fff;
     /* background: url(../img/intro-bg.jpg) no-repeat bottom center scroll; */
@@ -165,7 +165,7 @@ a:focus {
 @media(min-width:767px) {
     .intro {
         height: 100%;
-        padding: 100px 0;
+        padding: 250px 0;
     }
 
     .intro .intro-body .brand-heading {
