@@ -1,32 +1,33 @@
-<html>
-<!-- Fullscreen overlay -->
-<div class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-        <i class="fa fa-times fa-1x" aria-hidden="true"></i>
-    </a>
-    <div class="overlay-content">
-        <a href="{{site.baseurl}}/index.html">
-        Home
-        </a>
-        <a href="{{site.baseurl}}/search.html">
-        Search
-        </a>
-        <a href="{{site.baseurl}}/about.html">
-        About
-        </a>
-    </div>
-</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  {{ site.title }}
+                </a>
+            </div>
 
-<!-- Navigation bar -->
-<div class="navbar">
-    <a href="{{site.baseurl}}/index.html">
-        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-    </a>
-    <a class="right" style="cursor:pointer" onclick="openNav()">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </a>
-    <a class="right" href="{{site.baseurl}}/search.html">
-        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-    </a>
-</div>  
-</html>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    {% for page in site.pages | sort: "title" %}
+                    {% unless page.url == "/index.html" %}
+                    <li>
+                        <a class="page-scroll" href="#{{ page.title }}">{{ page.title }}</a>
+                    </li>
+                    {% endunless %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>

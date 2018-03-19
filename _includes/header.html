@@ -1,38 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-  <!-- Background fullscreen landing iamge -->
-  <div class="background-image"></div>
-
-  <!-- Title and short description -->
-  <div class="header-title-wrapper">
-      <div class="header-content">
-      <!-- <div style="position: relative; left: -50%; border: dotted red 1px;"> -->
-          <!-- <h1>{{site.title}}</h1> -->
-          <!-- <p>{{site.description}}</p> -->
-
-          <!-- <p>Hey I'm</p> -->
-          <h1>Jonas Harsch</h1>
-          <p>Simulation technology master student of university Stuttgart</p>
-      </div>
-
-    <!-- <section id="header-scroll-down">
-      <a href="#header-scroll-down"><span></span></a>
-    </section> -->
-    <!-- <p>{{site.description}}</p> -->
-    <!-- <section id="section04" class="demo">
-        <a href="#section05"><span></span></a>
-    </section> -->
-  </div>
-
-  <!-- Navigationbar -->
-  {% include navigation.html %}
-</html>
-<script>
-  $(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
-</script>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">&nbsp;</h1>
+                        <p class="intro-text">{{ content }}</p>
+                        {% capture title %}{% for page in site.pages | sort: "title" %}{% if forloop.first %}{{ page.title }}{% endif %}{% endfor %}{% endcapture %}
+                        <a href="#{{ title }}" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
