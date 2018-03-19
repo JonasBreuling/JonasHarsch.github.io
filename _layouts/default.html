@@ -1,69 +1,90 @@
----
-layout: base
----
-<main>
-  <div class="content">
-    <h1>About me</h1>
-    <img src="{{site.baseurl}}/assets/images/author.png">
-    My name is Jonas Harsch. I’m a simulation technology student of university stuttgart. In my blog I cover topics I'm intrested in.
-    <ul>
-      <li>Nonlinear continuum mechanis</li>
-      <li>High performance computing (implementation of parallel numerical solver using <i>MPI</i>, <i>OpenCL</i> and <i>CUDA</i>)</li>
-      <li>Isogeometric analysis</li>
-      <li>Programming (<i>C++</i>, <i>Fortran</i>, <i>python</i>, <i>cmake</i>)</li>
-    </ul>
-    <blockquote>
-      <em>Für nichts und wieder nichts.!</em>
-    </blockquote>
-    <h1>Education</h1>
-    <section>
-    <div class="timeline">
-      <div class="entries">
-        <div class="entry">
-          <div class="title">2011</div>
-          <div class="body">
-            <p>Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum suscipit eveniet amet dignissimos. Doloremque et distinctio quod molestiae ut.</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	{% include head.html %}
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+	{% include navigation.html %}
+	{% include header.html %}
+
+  {% for page in site.pages %}
+    {% if page.section-type == "default" %}
+      <!-- {{ page.title }} Section -->
+      <section id="{{ page.title }}" class="container content-section text-center">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                {{ page.content | markdownify }}
+              </div>
           </div>
-        </div>
-        <div class="entry">
-          <div class="title">2012</div>
-          <div class="body">
-            <p>Quo nobis cumque dolor iure voluptatem voluptatem alias soluta.</p>
+      </section>
+    {% elsif page.section-type == "contact" %}
+      <!-- {{ page.title }} Section -->
+      <section id="{{ page.title }}" class="container content-section text-center">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                {{ page.content | markdownify }}
+
+                {% if page.email %}
+                <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+                {% endif %}
+                <ul class="list-inline social-buttons">
+                    {% for network in page.social %}
+                    <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+                    {% endfor %}
+                </ul>
+              </div>
           </div>
-        </div>
-        <div class="entry">
-          <div class="title big">2013</div>
-          <div class="body">
-            <p>Rerum sit libero possimus amet excepturi. Exercitationem enim dolores sunt praesentium dolorum praesentium.</p>
+      </section>
+    {% elsif page.section-type == "timeline" %}
+      <!-- {{ page.title }} Section -->
+      <section id="{{ page.title }}" class="container content-section text-center">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                {{ page.content | markdownify }}
+                <ul class="timeline">
+                {% for post in site.posts %}
+                  {% assign loopindex = forloop.index | modulo: 2 %}
+                  {% capture class %}
+                    {% if loopindex == 0 %}
+                      timeline-inverted
+                    {% endif %}
+                  {% endcapture %}
+
+                  <li class="{{ class }}">
+                      <div class="timeline-image">
+                          <img class="img-circle img-responsive" src="{{ site.baseurl }}/{% if post.image %}{{ post.image }}{% else %}{{site.career-img}}{% endif %}" alt="">
+                      </div>
+                      <div class="timeline-panel">
+                          <div class="timeline-heading">
+                              <h4>{{ post.title }}</h4>
+                              <h4 class="subheading">{{ post.subtitle }}</h4>
+                          </div>
+                          <div class="timeline-body">
+                              <p class="text-muted">{{ post.content }}</p>
+                          </div>
+                      </div>
+                  </li>
+
+                {% endfor %}
+
+                  <li class="timeline-inverted">
+                    <div class="timeline-image">
+                      <img class="img-circle img-responsive" src="{{ site.baseurl }}/{{ site.career-img }}" alt="">
+                    </div>
+                  </li>
+   
+                </ul>
+
+              </div>
           </div>
-        </div>
-        <div class="entry">
-          <div class="title">2014</div>
-          <div class="body">
-            <p>Voluptatibus veniam ea reprehenderit atque. Reiciendis non laborum adipisci ipsa pariatur omnis. Sed ipsam repudiandae velit. Omnis libero nostrum aperiam nemo dolor ea eos eius. Esse a non itaque quidem.</p>
-          </div>
-        </div>
-        <div class="entry">
-          <div class="title">2015</div>
-          <div class="body">
-            <p>VAdipisci totam omnis cum et suscipit excepturi et excepturi. Inventore sequi sit ut aliquid. Modi aut dolores dignissimos.</p>
-            <p>Delectus facere officia consequuntur molestias deserunt illo. Placeat laudantium beatae natus excepturi ab nihil voluptates.</p>
-          </div>
-        </div>
-        <div class="entry">
-          <div class="title big">2016</div>
-          <div class="body">
-            <p>Impedit dolorem commodi explicabo fugit aut alias voluptatem. Magnam earum rerum quae dicta quibusdam aliquam ut.</p>
-          </div>
-        </div>
-        <div class="entry">
-          <div class="title">2017</div>
-          <div class="body">
-            <p>Qui facere eos aut suscipit doloremque quos...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
-  </div>
-</main>
+      </section>
+    {% endif %}
+  {% endfor %}
+
+	{% include footer.html %}
+	{% include js.html %}
+
+</body>
+</html>
