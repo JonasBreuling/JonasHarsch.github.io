@@ -1,0 +1,7 @@
+---
+layout: null
+title: October 2016 - Now
+subtitle:
+image: "img/timeline/simtech.png"
+---
+SimTech Master Studium. Spezialisierung *nonlinear-continuum mechanics*. Abschluss Master of Scienece im Oktober 2018.

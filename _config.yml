@@ -9,6 +9,6 @@ google-tracking-id:
 
 # Career Settings
 # Default career thumbnail image.
-career-img: "img/timeline/default.jpg"
+career-img: "img/timeline/baby.png"
 
 exclude: ["Rakefile", "LICENSE", "readme.markdown"]
