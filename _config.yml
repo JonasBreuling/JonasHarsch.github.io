@@ -26,3 +26,6 @@ algolia:
   search_only_api_key: 86ad1db9079ecc3013d32a4d2851fb2f
 
 include: [_includes, _layouts, _posts]
+
+sass:
+  sass_dir: assets/css
