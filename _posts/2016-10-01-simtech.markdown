@@ -4,4 +4,4 @@ title: October 2016 - Now
 subtitle:
 image: "img/timeline/simtech.png"
 ---
-**[SimTech Master](http://www.simtech.uni-stuttgart.de/index.html)** Studium. Spezialisierung *nonlinear-continuum mechanics*. Abschluss Master of Scienece im Oktober 2018.
+I passed the admission to the top degree program **[simulation technology](http://www.studium-simtech.uni-stuttgart.de/)**. My courses are from the topics *nonlinear continuum mechanics*, *computational mechanics*, *parallel numerics* and *advanced C++*". In summer 2018 I will finish my master degree.
