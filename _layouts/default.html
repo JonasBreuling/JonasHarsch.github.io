@@ -30,6 +30,7 @@
                 <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
                 {% endif %}
                 <ul class="list-inline social-buttons">
+                    <li><a href="https://jonasharsch.github.io/"><i class="fa fa-globe fa-fw"></i></a></li>
                     {% for network in page.social %}
                     <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
                     {% endfor %}
