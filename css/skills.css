@@ -2,8 +2,8 @@
     position:relative;
     display:block;
 	margin-bottom: 15px;
-	-moz-border-radius:30px;
-	-webkit-border-radius:30px;
+	/* -moz-border-radius:30px;
+	-webkit-border-radius:30px; */
 	-webkit-transition:0.4s linear;
 	-moz-transition:0.4s linear;
 	-ms-transition:0.4s linear;
@@ -17,9 +17,12 @@
     
 
     width: 100%;
-    background-color: white;
-    border-radius:30px;
+    /* background-color: white; */
+    background-color: #666463;
+    background-color: rgba(255,255,255,.1);
+    /* border-radius:30px; */
 	height:35px;
+	height:5px;
 }
 
 /* #skill-bar-wrapper b::after {
@@ -34,12 +37,13 @@
     color: white;
     border-radius:30px; */
 
-    height:35px;
+	height:35px;
+    height:5px;
 	width:0px;
-	background:#6adcfa;
-	border-radius:30px;
+	/* background:#6adcfa; */
+	/* border-radius:30px;
 	-moz-border-radius:30px;
-	-webkit-border-radius:30px;
+	-webkit-border-radius:30px; */
 }
 
 /* .my-skill-bar-percent {

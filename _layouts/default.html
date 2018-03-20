@@ -33,11 +33,16 @@
                 <div class="text-left">
                   <div id="skill-bar-wrapper">
                     {% for skill in page.my-skills %}
-                          <b>
+                          <!-- <b>
                             {{ skill.skill-name }}<span style="float:right;">{{ skill.percentage }}%</span>
-                          </b>
+                          </b> -->
+                          {{ skill.skill-name }}<span style="float:right;">{{ skill.percentage }}%</span>
                           <div class="skillbar-container clearfix" data-percent="{{ skill.percentage }}%">
-                            <div class="skills" style="background: {{ skill.color }};"></div>
+                            <!-- <div class="skills" style="background: {{ skill.color }};"></div> -->
+                            <!-- <div class="skills" style="background: #fed136;"></div> -->
+                            <!-- <div class="skills" style="background: #01a2dd;"></div> -->
+                            <!-- <div class="skills" style="background: #666463;"></div> -->
+                            <div class="skills" style="background: white;"></div>
                           </div>
                     {% endfor %}
                   </div>
