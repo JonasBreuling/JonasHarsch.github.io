@@ -10,14 +10,19 @@
 	{% include header.html %}
 
   {% for page in site.pages %}
-    {% if page.section-type == "default" %}
+    {% if page.section-type == "about" %}
       <!-- {{ page.title }} Section -->
+      <!-- <section id="{{ page.title }}" class="container content-section text-center"> -->
       <section id="{{ page.title }}" class="container content-section text-center">
-          <div class="row">
+        <h2>{{ page.title }}</h2>
+        <img class="author" src="{{ site.baseurl }}/{{ site.author-img }}" alt="">
+        <div class="row">
+          <div class="text-left">
               <div class="col-lg-8 col-lg-offset-2">
                 {{ page.content | markdownify }}
               </div>
           </div>
+        </div>
       </section>
     {% elsif page.section-type == "contact" %}
       <!-- {{ page.title }} Section -->
@@ -41,7 +46,8 @@
       <!-- {{ page.title }} Section -->
       <section id="{{ page.title }}" class="container content-section text-center">
           <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
+              <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+              <div class="col-lg-10 col-lg-offset-1">
                 {{ page.content | markdownify }}
                 <ul class="timeline">
                 {% for post in site.posts %}
@@ -54,7 +60,7 @@
 
                   <li class="{{ class }}">
                       <div class="timeline-image">
-                          <img class="img-circle img-responsive" src="{{ site.baseurl }}/{% if post.image %}{{ post.image }}{% else %}{{site.career-img}}{% endif %}" alt="">
+                          <img class="img-circle img-responsive" src="{{ site.baseurl }}/{% if post.image %}{{ post.image }}{% else %}{{site.default-img}}{% endif %}" alt="">
                       </div>
                       <div class="timeline-panel">
                           <div class="timeline-heading">
@@ -71,7 +77,7 @@
 
                   <li class="timeline-inverted">
                     <div class="timeline-image">
-                      <img class="img-circle img-responsive" src="{{ site.baseurl }}/{{ site.career-img }}" alt="">
+                      <img class="img-circle img-responsive" src="{{ site.baseurl }}/{{ site.baby-img }}" alt="">
                     </div>
                   </li>
    

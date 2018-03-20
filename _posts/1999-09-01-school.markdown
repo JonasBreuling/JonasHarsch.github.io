@@ -1,0 +1,9 @@
+---
+layout: null
+title: September 1999 - September 2012
+subtitle:
+image: "img/timeline/school.png"
+---
+- Primary school: [Georg-Hager Schule Mundelsheim](http://www.georg-hager-schule.de/)
+- Secondary school: [Maximilian-Lutz Realschule Besigheim](https://rsbesigheim.de/)
+- Secondary school: [Christoph Schrempf Gymnasium Besigheim](http://csgb.de/)

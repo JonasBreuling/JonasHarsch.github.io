@@ -1,4 +1,4 @@
-url: http://kirbyt.github.io
+url: https://jonasharsch.github.io/
 baseurl: 
 
 # Site Settings
@@ -7,8 +7,13 @@ description: "My name is Jonas Harsch. I’m a simulation technology student of 
 keywords: "jekyll, theme"
 google-tracking-id:
 
-# Career Settings
-# Default career thumbnail image.
-career-img: "img/timeline/baby.png"
+# Default career image.
+default-img: "img/timeline/default.png"
 
-exclude: ["Rakefile", "LICENSE", "readme.markdown"]
+# Author image
+author-img: "img/author/author.png"
+
+# Baby/ Beginning image
+baby-img: "img/timeline/baby.png"
+
+exclude: ["LICENSE"]
