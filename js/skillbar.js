@@ -12,7 +12,7 @@
             jQuery('.skillbar-container').each(function(){
                 jQuery(this).find('.skills').animate({
                     width:jQuery(this).attr('data-percent')
-                },6000);
+                }, 10000); // 10 seconds
             });
         });
     }

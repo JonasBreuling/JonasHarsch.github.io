@@ -1,0 +1,45 @@
+.title-image {
+    height: 300px;
+    /* display: inline; */
+}
+
+.project-wrapper {
+
+}
+
+.project-wrapper hr {
+    /* display: block; */
+    /* position: relative; */
+    /* padding: 0; */
+    /* margin: 8px auto; */
+    /* height: 0; */
+    /* width: 100%; */
+    /* max-height: 0; */
+    /* font-size: 1px; */
+    /* line-height: 0; */
+    /* clear: both; */
+    /* border: none; */
+    /* border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff; */
+ }
+
+.project-wrapper img {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 150px;
+    height: 150px;
+    width: 30%;
+    max-width: 250px;
+    min-width: 150px;
+    height: auto;
+}
+
+.project-wrapper p {
+    text-align: justify;
+    /* text-indent: 2em; */
+}
+
+.project-wrapper b {
+    text-align: justify;
+    /* text-indent: 2em; */
+}
