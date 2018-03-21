@@ -5,5 +5,5 @@ subtitle:
 image: "img/timeline/school.png"
 ---
 - Primary school: [Georg-Hager Schule Mundelsheim](http://www.georg-hager-schule.de/)
-- Secondary school: [Maximilian-Lutz Realschule Besigheim](https://rsbesigheim.de/)
-- Secondary school: [Christoph Schrempf Gymnasium Besigheim](http://csgb.de/)
+- Secondary modern school: [Maximilian-Lutz Realschule Besigheim](https://rsbesigheim.de/). On the advice of the class teacher I changed to grammar school after the first year.
+- Grammar school: [Christoph Schrempf Gymnasium Besigheim](http://csgb.de/). Finished with diploma from German secondary school qualifying for university admission or matriculation.
