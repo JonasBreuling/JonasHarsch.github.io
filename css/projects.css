@@ -101,3 +101,7 @@ hr {
     top: -30px;
     font-size: 40px;
 } */
+
+.project-supervisor p {
+    text-align: right;
+}
