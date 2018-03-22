@@ -53,26 +53,34 @@ hr {
     text-align: justify;
     /* text-indent: 2em; */
 }
+ 
+/* .carousel-control {
+    width: 80px;
+} */
 
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-    right: 25px;
-    top: -30px;
-    /* font-size: 40px; */
-    /* top: 100%; */
-}
-  
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+/* .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev { */
+.carousel-control .glyphicon-chevron-left {
     left: 15px;
     top: -30px;
     /* font-size: 40px; */
     /* top: 100%; */
 }
 
+.carousel-control .glyphicon-chevron-right {
+    right: 25px;
+    top: -30px;
+}
+
 .carousel-indicators {
     top: -20px;
+    height: 10px;
     /* margin-bottom: 50px;
     margin-top: -5px; */
 }
+
+/* .carousel-indicators{ 
+    height: 16px; 
+} */
 
 /* .carousel-inner {
     padding-left: 30px;
@@ -84,17 +92,12 @@ hr {
     padding-right: -100px;
 }
 
-.carousel-control .glyphicon-circle-arrow-right {
-    /* color: white; */
-    /* right: -100px; */
+/* .carousel-control .glyphicon-circle-arrow-right {
     top: -30px;
     font-size: 40px;
 }
 
 .carousel-control .glyphicon-circle-arrow-left {
-    /* color: white; */
-    /* left: -100px; */
     top: -30px;
-    /* left: -10px; */
     font-size: 40px;
-}
+} */
