@@ -7,7 +7,8 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 	{% include navigation.html %}
-	{% include header.html %}
+  {% include header.html %}
+  {% seo %}
 
   {% for page in site.pages %}
     {% if page.section-type == "about" %}

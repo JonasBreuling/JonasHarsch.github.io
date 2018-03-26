@@ -11,9 +11,13 @@ google-tracking-id:
 default-img: "img/timeline/default.png"
 
 # Author image
-author-img: "img/author/author.png"
+author-img: "img/author/author2.png"
 
 # Baby/ Beginning image
 baby-img: "img/timeline/baby.png"
 
 exclude: ["LICENSE"]
+
+# Define plugins
+plugins:
+  - jekyll-seo-tag
