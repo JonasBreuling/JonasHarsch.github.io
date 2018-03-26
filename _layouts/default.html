@@ -183,7 +183,11 @@
                 {% endif %}
                 <ul class="list-inline social-buttons">
                     {% for network in page.social %}
-                    <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+                      {% if network.title == "gitlab" %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-gitlab fa-fw"></i></a></li>
+                      {% else %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+                      {% endif%}
                     {% endfor %}
                 </ul>
               </div>
