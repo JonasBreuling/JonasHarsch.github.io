@@ -17,6 +17,10 @@ author-img: "img/author/author2.png"
 # Baby/ Beginning image
 baby-img: "img/timeline/baby.png"
 
+collections:
+  education:
+  work:
+
 exclude: ["LICENSE"]
 
 # Define plugins
