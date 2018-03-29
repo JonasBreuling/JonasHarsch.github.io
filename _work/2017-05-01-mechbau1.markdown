@@ -1,0 +1,7 @@
+---
+layout: null
+title: TODO - TODO
+subtitle:
+image: "img/projects/research-module2.png"
+---
+TODO [Institute of Applied Mechanics (CE) - Chair of Material Theory](http://www.mechbau.uni-stuttgart.de/ls1/index.html), [University Stuttgart](https://www.uni-stuttgart.de/).

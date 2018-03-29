@@ -1,0 +1,7 @@
+---
+layout: null
+title: 01 August 2016 - TODO
+subtitle:
+image: "img/work-timeline/tutor-inm.png"
+---
+Betreuung Tutorübungen & Prüfungssprechstunde Technische Mechanik 1-4, [institute for nonlinear mechanics](https://www.inm.uni-stuttgart.de/en/index.html), [University Stuttgart](https://www.uni-stuttgart.de/).

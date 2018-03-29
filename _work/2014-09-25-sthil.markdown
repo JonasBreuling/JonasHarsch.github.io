@@ -1,0 +1,10 @@
+---
+layout: null
+title: 25. September 2014 - 17 Oktober 2014
+subtitle:
+image: "img/work-timeline/stihl.png"
+---
+Werkstudent, [ANDREAS STIHL AG & Co. KG, Waiblingen](). Abteilung CAD/CAM Betreuung:
+
+- Analyse bestehender CAD-Daten in Creo Parametric
+- Implementierung dieser Daten in SolidWorks inklusieve PDM-System DB-Works auf Grundlagen der internen Nummernlogik

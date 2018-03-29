@@ -286,9 +286,9 @@
               {% for post in site.work reversed %}
                 {% assign loopindex = forloop.index | modulo: 2 %}
                 {% capture post-class %}
-                  {% if loopindex == 0 %}
+                  <!-- {% if loopindex == 0 %}
                     timeline-inverted
-                  {% endif %}
+                  {% endif %} -->
                 {% endcapture %}
 
                 <li class="{{ post-class }}">
@@ -308,11 +308,11 @@
 
               {% endfor %}
 
-              <!-- <li class="timeline-inverted">
+              <li class="timeline-inverted">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="{{ site.baseurl }}/{{ site.baby-img }}" alt="">
                 </div>
-              </li> -->
+              </li>
  
               </ul>
 
