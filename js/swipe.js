@@ -4,7 +4,7 @@ $(document).ready(function() {
 });
 */
 
-$(document).ready(function() {  
+$(function() {
     $("#myCarousel").swiperight(function() {  
        $(this).carousel('prev');  
     });  
