@@ -1,7 +1,8 @@
-// window.addEventListener("load", function() {
-//     var load_screen = document.getElementById("load_screen");
-//     this.document.body.removeChild(load_screen);
-// });
+window.addEventListener("load", function() {
+    // var load_screen = document.getElementById("load_screen");
+    // this.document.body.removeChild(load_screen);
+    jQuery('.loading-page-bg').delay(1000).fadeOut(500);
+});
 
 // var readyStateCheckInterval = setInterval(function() {
 //     if (document.readyState === "complete") {
@@ -25,9 +26,11 @@ document.onreadystatechange = function () {
 */
 
 // jQuery(document).ready(function() {
+    /*
 $(document).ready(function() {
     jQuery('.loading-page-bg').delay(1000).fadeOut(500);
 });
+*/
 
 $(document).ready(function() {
   
