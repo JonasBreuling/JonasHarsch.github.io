@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
     // var load_screen = document.getElementById("load_screen");
     // this.document.body.removeChild(load_screen);
     // jQuery('.loading-page-bg').delay(3000).fadeOut(500);
-    jQuery('.loading-page-bg').delay(500).fadeOut(500);
+    jQuery('.loading-page-bg').delay(1000).fadeOut(1000);
 });
 
 // var readyStateCheckInterval = setInterval(function() {
