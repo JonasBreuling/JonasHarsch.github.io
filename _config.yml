@@ -4,7 +4,7 @@ baseurl:
 # Site Settings
 title: Jonas Harsch
 author: I’m a simulation technology master student at stuttgart university. My key interest are  **Nonlinear continuum mechanis**, **Parallel computing** (implementation of parallel numerical solver using *MPI*, *OpenCL* and *CUDA*), **Isogeometric analysis** and **Programming** (*C++*, *fortran*, *python*, *cmake*).
-description: "Simulation technology student of stuttgart university"
+description: "Simulation technology student"
 keywords: "Jonas, Harsch, simulation, technology, continuum, mechanics, Stuttgart, university, C++, beam, nonlinear, FE, Finite Elements, Implementation"
 google-tracking-id:
 
