@@ -1,7 +1,9 @@
 ---
 layout: null
-title: TODO - TODO
+title: 01. June 2017 - 28. February 2018
 subtitle:
 image: "img/projects/research-module2.png"
 ---
-TODO [Institute of Applied Mechanics (CE) - Chair of Material Theory](http://www.mechbau.uni-stuttgart.de/ls1/index.html), [University Stuttgart](https://www.uni-stuttgart.de/).
+Development of a both portable and flexible finite element framework for the computation of user defined material models in structural mechanic problems. Aim of this work was to create a high-level Python user interface with a high performance C++ material subroutine using the open-source program FEniCS.
+
+[Institute of Applied Mechanics (CE) - Chair of Material Theory](http://www.mechbau.uni-stuttgart.de/ls1/index.html), [University Stuttgart](https://www.uni-stuttgart.de/).

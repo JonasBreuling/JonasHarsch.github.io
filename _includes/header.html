@@ -3,9 +3,10 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-6 col-md-offset-3">
                         <h1 class="brand-heading">&nbsp;</h1>
-                        <p class="intro-text">{{ site.description }}</p>
+                        <!-- <p class="intro-text">{{ site.description }}</p> -->
+                        <h1>{{ site.description }}</h1>
                         {% capture title %}{% for page in site.pages | sort: "title" %}{% if forloop.first %}{{ page.title }}{% endif %}{% endfor %}{% endcapture %}
                         <!-- <a href="#{{ title }}" class="btn btn-circle page-scroll"> -->
                         <a href="#{{ title }}" class="btn btn-circle page-scroll">
@@ -20,11 +21,9 @@
     <!-- Page Loading Animation -->
     <div class="loading-page-bg">
         <div class="loading-page">
-                <h1>loading</h1>
-                <!-- <div class="counter">
-                    <h1>0%</h1>
-                    <hr/>
-                </div> -->
+            <h1>loading</h1>
+            
+            <!-- <img src="{{ site.baseurl }}/img/pendulum.gif" alt="loading"> -->
 
             <div class="sk-folding-cube">
                 <div class="sk-cube1 sk-cube"></div>
