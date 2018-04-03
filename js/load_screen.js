@@ -26,7 +26,7 @@ document.onreadystatechange = function () {
 
 // jQuery(document).ready(function() {
 $(document).ready(function() {
-    jQuery('#load').delay(1000).fadeOut(500);
+    jQuery('.loading-page-bg').delay(1000).fadeOut(500);
 });
 
 $(document).ready(function() {
