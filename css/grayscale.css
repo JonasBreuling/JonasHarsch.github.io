@@ -430,7 +430,7 @@ body {
 }
 
 .author {
-    height: 300px;
+    height: 500px;
     padding-bottom: 30px;
 }
 
@@ -457,6 +457,11 @@ body {
         margin-bottom: 20px;
         display: block;
     }
+    
+    .author {
+        height: 350px;
+        padding-bottom: 30px;
+    }
 }
 
 @media(max-width:767px) {
@@ -469,5 +474,10 @@ body {
         margin-top: -120px;
         margin-bottom: 30px;
         display: block;
+    }
+
+    .author {
+        height: 300px;
+        padding-bottom: 30px;
     }
 }

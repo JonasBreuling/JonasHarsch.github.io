@@ -28,9 +28,33 @@
     <!-- Double Pendulum JavaScript -->
     <script src="{{ site.baseurl }}/js/pendulum.js"></script>
 
-    <script>
-      document.addEventListener("touchstart", function(){}, true);
-    </script>
+    <!-- <script>
+      function isScrolledIntoView(elem) {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height();
+
+          var elemTop = $(elem).offset().top;
+          var elemBottom = elemTop + $(elem).height();
+
+          return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+      }
+
+      $(window).scroll(function(){
+
+          if (isScrolledIntoView('.scrol-in') === true) {
+              $('.scrol-in').addClass('in-view')
+          } else {
+              $('.scrol-in').removeClass('in-view')
+          }
+
+          if (isScrolledIntoView('.scrol-in2') === true) {
+              $('.scrol-in2').addClass('in-view')
+          } else {
+              $('.scrol-in2').removeClass('in-view')
+          }
+
+      });
+    </script> -->
 
     {% if site.google-tracking-id %}
     <script>

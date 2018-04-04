@@ -130,7 +130,7 @@
                   <div id="skill-bar-wrapper">
                     {% for skill in page.my-skills %}
                       {{ skill.skill-name }}<span style="float:right;">{{ skill.percentage }}%</span>
-                      <div class="skillbar-container clearfix" data-percent="{{ skill.percentage }}%">
+                      <div class="skillbar-container clearfix" data-percent="{{ skill.percentage }}%" default-zero="0%">
                         <div class="skills" style="background: white;"></div>
                       </div>
                     {% endfor %}
@@ -176,7 +176,7 @@
                   {% endcapture %}
 
                   <li class="{{ post-class }}">
-                    <div class="timeline-image">
+                    <div class="timeline-image scrol-in">
                       <img class="img-circle img-responsive" src="{{ site.baseurl }}/{% if post.image %}{{ post.image }}{% else %}{{site.default-img}}{% endif %}" alt="">
                     </div>
                     <div class="timeline-panel">
