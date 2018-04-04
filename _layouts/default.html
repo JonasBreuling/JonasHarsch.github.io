@@ -13,7 +13,8 @@
   {% for page in site.pages %}
     {% if page.section-type == "about" %}
       <!-- {{ page.title }} Section -->
-      <section id="{{ page.title }}" class="container content-section text-center">
+      <section id="{{ page.title }}" class="container content-section text-center"> 
+
         <h2>{{ page.title }}</h2>
         <img class="author" src="{{ site.baseurl }}/{{ site.author-img }}" alt="">
         <div class="row">
