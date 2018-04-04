@@ -5,21 +5,22 @@ var dt = 0.02;
 var canvas = document.getElementById("myCanvas");
 var canvasContext = canvas.getContext("2d");
 
-canvasContext.translate(105, 105);
+// canvasContext.translate(105, 105);
+canvasContext.translate(200, 200);
 canvasContext.rotate(Math.PI/2);
 
 function setup() { 
     dp = new DblPen();
     // pts1 = [];
-    // pts2 = [];
+    pts2 = [];
     /*
     for(i=0;i<tail;i++){ //prepopulate pts1 array
         pts1.push(createVector(dp.x1,dp.y1));
     }
     */
-    // for(i=0;i<tail;i++){ //prepopulate pts2 array
-    //     pts2.push(createVector(dp.x2,dp.y2));
-    // }
+    for(i=0;i<tail;i++){ //prepopulate pts2 array
+        pts2.push(createVector(dp.x2,dp.y2));
+    }
 } 
   
 function draw() {
@@ -35,7 +36,6 @@ function draw() {
     pts1.shift();
     pts1.push(createVector(dp.x1,dp.y1));
     */
-    /*
     pts2.shift();
     pts2.push(createVector(dp.x2,dp.y2));
 
@@ -52,16 +52,19 @@ function draw() {
         canvasContext.strokeStyle="white";
         canvasContext.stroke();
     }
-    */
     
     dp.display();		
 }
 
 function DblPen() {
-	var l1 = 50;
-	var l2 = 40;
-	var m1 = 100;
-	var m2 = 100;
+	// var l1 = 50;
+	// var l2 = 40;
+	// var m1 = 100;
+	// var m2 = 100;
+	var l1 = 100;
+	var l2 = 80;
+	var m1 = 200;
+	var m2 = 200;
 	this.theta1 = PI/2;
 	this.theta2 = PI/2+random();
 	this.w1 = 0;
@@ -93,27 +96,32 @@ function DblPen() {
         canvasContext.moveTo(0,  0);
         canvasContext.lineTo(this.x1, this.y1);
         canvasContext.strokeStyle="white";
-        canvasContext.lineWidth=1;
+        // canvasContext.lineWidth=1;
+        canvasContext.lineWidth=2;
         canvasContext.stroke();
         
         canvasContext.moveTo(this.x1, this.y1);
         canvasContext.lineTo(this.x2, this.y2);
         canvasContext.strokeStyle="white";
-        canvasContext.lineWidth=1;
+        // canvasContext.lineWidth=1;
+        canvasContext.lineWidth=2;
         canvasContext.stroke();
 
         canvasContext.beginPath();
-        canvasContext.arc(this.x1, this.y1, 5, 0, 2*Math.PI);
+        // canvasContext.arc(this.x1, this.y1, 5, 0, 2*Math.PI);
+        canvasContext.arc(this.x1, this.y1, 10, 0, 2*Math.PI);
         canvasContext.fillStyle="white";
         canvasContext.fill();
 
         canvasContext.beginPath();
-        canvasContext.arc(this.x2, this.y2, 5, 0, 2*Math.PI);
+        // canvasContext.arc(this.x2, this.y2, 5, 0, 2*Math.PI);
+        canvasContext.arc(this.x2, this.y2, 10, 0, 2*Math.PI);
         canvasContext.fillStyle="white";
         canvasContext.fill();
 
         canvasContext.beginPath();
-        canvasContext.arc(0, 0, 4.0, 0, 2*Math.PI);
+        // canvasContext.arc(0, 0, 4.0, 0, 2*Math.PI);
+        canvasContext.arc(0, 0, 8.0, 0, 2*Math.PI);
         canvasContext.fillStyle="white";
         canvasContext.fill();
 	}
