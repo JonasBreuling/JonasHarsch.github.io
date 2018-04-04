@@ -8,7 +8,7 @@ var canvasContext = canvas.getContext("2d");
 // canvasContext.translate(105, 105);
 // canvasContext.rotate(Math.PI/2);
 
-setDPI(canvas, 50);
+// setDPI(canvas, 50);
 
 canvasContext.translate(105, 105);
 canvasContext.rotate(Math.PI/2);
