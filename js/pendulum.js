@@ -123,7 +123,7 @@ function DblPen() {
         canvasContext.fill();
 
         canvasContext.beginPath();
-        canvasContext.arc(0, 0, 4.0, 0, 2*Math.PI);
+        canvasContext.arc(0, 0, 5, 0, 2*Math.PI);
         // canvasContext.arc(0, 0, 8.0, 0, 2*Math.PI);
         canvasContext.fillStyle="white";
         canvasContext.fill();
