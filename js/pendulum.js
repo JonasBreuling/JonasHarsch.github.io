@@ -1,6 +1,8 @@
-var tail = 200;
+var tail = 300;
 var g = 9.8;
 var dt = 0.02;
+var color1 = "rgba(255, 255, 255,";
+var color2 = ")";
 
 var canvas = document.getElementById("myCanvas");
 var canvasContext = canvas.getContext("2d");
@@ -52,7 +54,8 @@ function draw() {
         canvasContext.lineTo(pts2[i].x, pts2[i].y);
         // canvasContext.strokeStyle="#5b5b5b";
         // canvasContext.strokeStyle="#919191";
-        canvasContext.strokeStyle="white";
+        // canvasContext.strokeStyle="white";
+        canvasContext.strokeStyle="rgba("+255+","+255+","+255+","+(i / tail)+")";
         canvasContext.lineWidth=1;
         canvasContext.stroke();
         // canvasContext.fill();
