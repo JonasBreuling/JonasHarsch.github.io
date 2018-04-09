@@ -62,7 +62,7 @@
                         <h4>{{ project.title }}</h4>
                       </div>
                       <div class="text-right">
-                        <h5><em>{{ project.institute }} <br>&#x2014 {{ project.place }}</em></h5>
+                        <h4><em>{{ project.institute }} <br>&#x2014 {{ project.place }}</em></h4>
                         <hr>
                         <div class="left">
                           <img class="img-responsive right" src="{{ project.image }}" alt="">
@@ -87,7 +87,7 @@
                         <h4>{{ project.title }}</h4>
                       </div>
                       <div class="text-right">
-                        <h5><em>{{ project.institute }} <br>&#x2014 {{ project.place }}</em></h5>
+                        <h4><em>{{ project.institute }} <br>&#x2014 {{ project.place }}</em></h4>
                         <hr>
                         <div class="left">
                           <img class="img-responsive right" src="{{ project.image }}" alt="">
@@ -150,8 +150,8 @@
           <div class="row">
               <!-- <div class="col-lg-8 col-lg-offset-2"> -->
               <div class="col-lg-10 col-lg-offset-1">
-                <!-- {{ page.content | markdownify }} -->
                 <h1>{{ page.title }}</h1>
+                {{ page.content | markdownify }}
 
                 {% if page.email %}
                 <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
@@ -190,8 +190,8 @@
                     </div>
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4>{{ post.title }}</h4>
-                        <h4 class="subheading">{{ post.subtitle }}</h4>
+                        <h3>{{ post.title }}</h3>
+                        <h3 class="subheading">{{ post.subtitle }}</h3>
                       </div>
                       <div class="timeline-body">
                         <p class="text-muted">{{ post.content }}</p>
@@ -259,8 +259,8 @@
         <div class="row">
             <!-- <div class="col-lg-8 col-lg-offset-2"> -->
             <div class="col-lg-10 col-lg-offset-1">
-              <!-- {{ page.content | markdownify }} -->
-              <h1>{{ page.title }}</h1>
+              {{ page.content | markdownify }}
+              <!-- <h1>{{ page.title }}</h1> -->
               <ul class="timeline">
               {% for post in site.work reversed %}
                 {% assign loopindex = forloop.index | modulo: 2 %}
@@ -276,8 +276,8 @@
                   </div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h4>{{ post.title }}</h4>
-                      <h4 class="subheading">{{ post.subtitle }}</h4>
+                      <h3>{{ post.title }}</h3>
+                      <h3 class="subheading">{{ post.subtitle }}</h3>
                     </div>
                     <div class="timeline-body">
                       <p class="text-muted">{{ post.content }}</p>

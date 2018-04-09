@@ -24,7 +24,6 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
     /* text-transform: capitalize; */
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -32,7 +31,15 @@ h6 {
 }
 
 h1 {
+    text-transform: uppercase;
     padding: 0 0 30px 0;
+}
+
+/* Underlining should not cross text */
+h4 br {
+        display: block; /* makes it have a width */
+        content: ""; /* clears default height */
+        margin-top: 8px; /* change this to whatever height you want it */
 }
 
 p {
@@ -170,8 +177,8 @@ a:hover {
     text-align: center;
     color: #fff;
     /* background: url(../img/intro-bg.jpg) no-repeat bottom center scroll; */
-    background: url(../img/bg_new.png) no-repeat bottom center scroll;
-    /* background: url(../img/bg_new.svg) no-repeat bottom center scroll; */
+    /* background: url(../img/bg_new.png) no-repeat bottom center scroll; */
+    background: url(../img/bg_new.svg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -222,21 +229,10 @@ a:hover {
 }
 
 .btn-circle {
-    /* width: 70px; */
-    /* height: 70px; */
-    /* margin-top: 15px;
-    padding: 7px 16px; */
-    /* border: 2px solid #fff;
-    border-radius: 35px; */
-    margin-top: -150px;
+    margin-top: -170px;
     font-size: 50px;
     color: #fff;
     border: none;
-    /*
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out; */
 }
 
 .btn-circle:hover,
@@ -514,6 +510,13 @@ body {
 }
 
 @media(max-width:767px) {
+    .btn-circle {
+        margin-top: -200px;
+        font-size: 50px;
+        color: #fff;
+        border: none;
+    }
+
     #myCanvas {
     
         padding: 0;

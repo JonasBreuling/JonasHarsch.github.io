@@ -1,4 +1,4 @@
-var tail = 300;
+var tail = 250;
 var g = 9.8;
 var dt = 0.02;
 var color1 = "rgba(255, 255, 255,";

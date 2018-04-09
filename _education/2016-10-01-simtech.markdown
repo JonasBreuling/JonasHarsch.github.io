@@ -4,11 +4,11 @@ title: October 2016 - Now
 subtitle:
 image: "img/timeline/simtech.png"
 ---
-I passed the admission to the top degree program **[simulation technology](http://www.studium-simtech.uni-stuttgart.de/)**. My key courses are 
+I passed the admission to the top degree program [simulation technology](http://www.studium-simtech.uni-stuttgart.de/). My key courses are 
 
-- *nonlinear continuum mechanics*
-- *computational mechanics*
-- *parallel numerics*
-- *advanced C++*
+- nonlinear continuum mechanics
+- computational mechanics
+- parallel numerics
+- advanced C++
 
 Currently I'm doing my master thesis at the [institute for nonlinear mechanics](https://www.inm.uni-stuttgart.de/en/index.html) with the topic *"Spagetthi and Inverse Spagetthi Problem Revisited"*. In summer 2018 I will finish my master degree.
