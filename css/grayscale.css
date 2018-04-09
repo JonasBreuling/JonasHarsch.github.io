@@ -177,8 +177,8 @@ a:hover {
     text-align: center;
     color: #fff;
     /* background: url(../img/intro-bg.jpg) no-repeat bottom center scroll; */
-    /* background: url(../img/bg_new.png) no-repeat bottom center scroll; */
-    background: url(../img/bg_new.svg) no-repeat bottom center scroll;
+    background: url(../img/bg_new.png) no-repeat bottom center scroll;
+    /* background: url(../img/bg_new.svg) no-repeat bottom center scroll; */
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
