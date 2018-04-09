@@ -70,6 +70,7 @@ ul li{
     }
 }
 
+/*
 a {
     color: #fed136;
     text-decoration: none;
@@ -80,16 +81,31 @@ a {
 }
 
 a:hover {
-    /* color: #fed136;
-    text-decoration: underline;
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out; */
-
     color: #fed136;
     border-color: #fed136;
     text-decoration: none;
 }
+*/
+
+/* see: https://stackoverflow.com/questions/44673496/how-to-animate-a-link-underline-with-border-bottom-so-that-there-is-space-betwe */
+a {
+    color: #fed136;
+    padding-bottom: 4px;
+    /* set here size + gap size from text */
+    background: linear-gradient(0deg, currentcolor, currentcolor) bottom left no-repeat;
+    background-size: 0px 3px;
+    transition: 1.0s;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a.active {
+    color: #fed136;
+    background-size: 100% 3px;
+    text-decoration: none;
+}
+
 
 .light {
     font-weight: 400;
@@ -128,6 +144,14 @@ a:hover {
 
 .navbar-custom a {
     color: #fff;
+}
+
+/* Don't underline links in navbar! */
+.navbar-custom a:hover,
+.navbar-custom a:focus,
+.navbar-custom a:active {
+    background-size: 0 0;
+    text-decoration: none;
 }
 
 .navbar-custom .nav li.active {
@@ -408,6 +432,10 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
     color: #222;
     background-color: #fec503;
+
+    /* Don't underline social buttons (ugly cutoff) */
+    background-size: 0 0;
+    text-decoration: none;
 }
 
 footer {
