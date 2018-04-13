@@ -1,9 +1,6 @@
 var tail = 250;
 var g = 9.8;
-// var dt = 0.0175;
 var dt = 0.0175;
-var color1 = "rgba(255, 255, 255,";
-var color2 = ")";
 
 var canvas = document.getElementById("myCanvas");
 var canvasContext = canvas.getContext("2d");

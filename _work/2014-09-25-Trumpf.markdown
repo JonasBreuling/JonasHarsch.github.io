@@ -1,6 +1,6 @@
 ---
 layout: null
-title: 25. August 2014 - 17. Oktober 2014
+title: 25. August 2014 - 17. October 2014
 subtitle:
 image: "img/work-timeline/trumpf.png"
 ---

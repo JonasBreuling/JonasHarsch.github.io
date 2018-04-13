@@ -1,6 +1,6 @@
 ---
 layout: null
-title: 01. February 2015 - 31. May 2015
+title: 01. February 2014 - 31. May 2014
 subtitle:
 image: "img/work-timeline/stihl.png"
 ---
