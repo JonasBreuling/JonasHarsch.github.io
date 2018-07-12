@@ -11,4 +11,4 @@ I passed the admission to the top degree program [simulation technology](http://
 - parallel numerics
 - advanced C++
 
-Currently I'm doing my master thesis at the [institute for nonlinear mechanics](https://www.inm.uni-stuttgart.de/en/index.html) with the topic *"Spagetthi and Inverse Spagetthi Problem Revisited"*. In summer 2018 I will finish my master degree.
+Currently I'm doing my master thesis at the [institute for nonlinear mechanics](https://www.inm.uni-stuttgart.de/en/index.html) with the topic *"Dynamic Modeling of Beams with Non-Material Boundary Conditions"*. In summer 2018 I will finish my master degree.
