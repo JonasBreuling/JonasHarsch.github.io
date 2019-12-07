@@ -1,7 +1,0 @@
----
-layout: null
-title: 01 April 2018 - Now
-subtitle:
-image: "img/work-timeline/tutor-inm.png"
----
-Tutor exercises & exam consulting hours for engineering mechanics 1-4. [Institute for nonlinear mechanics](https://www.inm.uni-stuttgart.de/en/index.html), [University of Stuttgart](https://www.uni-stuttgart.de/).

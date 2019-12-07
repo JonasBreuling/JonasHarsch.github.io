@@ -18,8 +18,7 @@ author-img: "img/author/author2.png"
 baby-img: "img/timeline/baby.png"
 
 collections:
-  education:
-  work:
+  career:
 
 exclude: ["LICENSE"]
 
